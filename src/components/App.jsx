@@ -1,5 +1,5 @@
 import { Component } from 'react';
-
+import { Wraper } from './App.styled';
 import { Section } from './section';
 import { FeedbackOptions } from './feedback-options';
 import { Statistics } from './statistics';
@@ -32,7 +32,7 @@ export class App extends Component {
     const positivePercentage = this.countPositiveFeedbackPercentage();
     const { good, neutral, bad } = this.state;
     return (
-      <>
+      <Wraper>
         <Section title="Please leave your feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
@@ -52,7 +52,7 @@ export class App extends Component {
             <Notification message="There is no feedback" />
           )}
         </Section>
-      </>
+      </Wraper>
     );
   }
 }

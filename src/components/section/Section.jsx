@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import { SectionWrap } from './Section.styled';
 export const Section = ({ title, children }) => {
   return (
-    <section>
+    <SectionWrap>
       <h2>{title}</h2>
       {children}
-    </section>
+    </SectionWrap>
   );
 };
 

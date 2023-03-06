@@ -1,6 +1,5 @@
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
-// export const Section = styled.section`
-//   display: flex;
-//   justify-content: space-between;
-// `;
+export const SectionWrap = styled.section`
+  margin-left: 20px;
+`;
